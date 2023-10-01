@@ -10,7 +10,14 @@
     <title>TMC INEROR</title>
 </head>
 <body>
-  <nav class="navbar bg-dark p-5">
+  <nav class="navbar bg-dark p-4">
+    <div class="login d-flex"></div>
+        <a href="#" class="d-flex align-items-center text-white text-decoration-none">
+          <i class="fa-regular fa-circle-user" style="font-size: 30px;"></i>&emsp;
+          <strong style="font-size: 30px; font-weight: 400;">Trần Mạnh Cường</strong>
+        </a>
+      </li>
+    </ul>
   </nav>
   <nav class="sidebar">
     <header>
@@ -32,13 +39,6 @@
           <li class="nav-link"><a href="../User/Sign-in-up.html"><i class="fa-solid fa-right-from-bracket"></i>Đăng xuất</a></li>
         </ul>
       </div>
-    </div><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <hr>
-    <div class="dropdown">
-      <a href="#" class="d-flex align-items-center text-white text-decoration-none">
-        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-        <strong>Trần Mạnh Cường</strong>
-      </a>
     </div>
   </nav>
   <script src="./bootstrap5/js/bootstrap.min.js"></script>
