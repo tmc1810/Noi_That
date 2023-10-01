@@ -32,6 +32,13 @@
                     </div>
 
                     <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Thứ tự</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" value="0">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row">
                         <label for="inputPassword" class="col-sm-2 col-form-label">Ảnh đại diện</label>
                         <div class="col-sm-10">
                             <input class="btn bg-secondary text-white" type="button" value="Chọn ảnh đại diện" />    
