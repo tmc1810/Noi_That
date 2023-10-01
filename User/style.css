@@ -1,0 +1,192 @@
+body{
+    background:rgb(255, 255, 255);
+}
+
+/* CSS cho đầu đề */
+#header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b8b7b72d;
+    color: #fff;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.navbar{
+    height: 100px;
+}
+
+.navbar-brand{
+    margin-left: 150px;
+}
+.navbar ul li{
+    font-size: 18px;
+    margin-right: 20px
+}
+
+.navbar a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #FFF;
+}
+
+.nav{
+    
+    margin-right: 100px;
+}
+
+.body-web{
+    position:absolute;
+    width:100%;
+    height: 950px;
+    z-index: 0;
+}
+
+.body-web ul{
+    margin-left: -32px;
+    list-style: none;
+}
+
+.body-web ul li .title{
+    position:absolute;
+}
+
+.body-web ul li .tmc{
+    margin-top: 380px;
+    margin-left: 770px;
+    font-size: 120px;
+    color:#FFF;
+}
+
+.body-web ul li p{
+    margin-left: 710px;
+    margin-top: -50px;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    color:#FFF;
+}
+
+.main-gioithieu {
+    position:absolute;
+    margin-top: 20px;
+}
+
+.main-gioithieu .main-title{
+    position:absolute;
+    margin-left: 400px;
+    margin-top: 200px;
+    width: 1000px;
+    height: 600px;
+}
+
+.main-gioithieu .main-title h3{
+    color:#FFF;
+}
+
+.main-gioithieu .main-title h3 hr{
+    width: 250px;
+}
+
+.main-gioithieu .main-title h3 .hello{
+    color:#EDCD8E;
+    margin-left: 30px;
+}
+.main-gioithieu .main-title h6{
+    position:relative;
+    margin-right: 750px;
+    margin-top: -80px;
+    color:#FFF;
+    letter-spacing: 5px;
+    transform: rotate(-90deg) translate(-106px, -98px);
+}
+
+.main-gioithieu .main-title h6 hr{
+    width: 250px;
+}
+
+.main-gioithieu .main-title .comment{
+    background:none;
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 600px;
+    height: 150px;
+}
+
+.main-gioithieu .main-title .comment h2{
+    color:rgb(154, 154, 154);
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.main-gioithieu .main-title button{
+    margin: 50px;
+    border-radius: 0%;
+}
+
+.main-gioithieu .main-title button .click{
+    color:#FFF;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.main-gioithieu .main-title .menu-list{
+    margin-top: -30px;
+    margin-left: 48px;
+    width: 650px;
+    height: 253px;
+}
+
+.main-gioithieu .main-title .menu-list ul li{
+    margin-left : 60px;
+}
+
+.main-gioithieu .main-title .menu-list ul li h1{
+    font-size: 64px;
+    color:#FFF;
+    margin-left: 20px;
+}
+
+.main-gioithieu .main-title .img-title{
+    margin-left: 770px;
+    margin-top: -630px;
+}
+
+footer{
+    position:absolute;
+    background: rgb(39, 38, 38);
+    margin-top: 3000px;
+    width:100%;
+}
+
+footer .list{
+    margin-left: 300px;
+}
+
+footer hr{
+    background: rgb(232, 184, 91);
+    height: 2px;
+    border-top: var(--bs-border-width) solid;
+    opacity: 5;
+}
+
+footer ul li {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+footer ul li h5{
+    margin-top: 30px;
+    color:#FFF;
+}
+
+footer ul li a{
+    color:rgb(154, 154, 154);
+    text-decoration: none;
+}
