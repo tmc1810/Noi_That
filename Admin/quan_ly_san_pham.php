@@ -53,14 +53,11 @@
                     <th id="product-grid_c1">Mã sản phẩm</th>
                     <th id="product-grid_c2">Tên sản phẩm</th>
                     <th id="product-grid_cprice">Giá sản phẩm</th>
-                    <th id="product-grid_cprice_market">Giá thị trường</th>
                     <th id="product-grid_cproduct_category_id">Danh mục</th>
                     <th id="product-grid_c3">Đã bán</th>
                     <th id="product-grid_c4">Số lượng</th>
                     <th id="product-grid_cstatus">Trạng thái</th>
-                    <th id="product-grid_cishot">Sp  Hot</th>
-                    <th id="product-grid_cisnew">Sp  Mới</th><th id="product-grid_c5">Lượt xem</th>
-                    <th id="product-grid_c6">Thứ tự hiển thị</th>
+                    <th id="product-grid_c5">Lượt xem</th>
                     <th id="product-grid_ccreated_time">Ngày đăng</th>
                     <th class="button-column" id="product-grid_c7">&nbsp;</th>
                 </tr>
@@ -72,15 +69,11 @@
                         <td></td>
                         <td>DHI-ASL6101K</td>
                         <td>9.490.000</td>
-                        <td>0</td>
                         <td>KHÓA THÔNG MINH</td>
                         <td>1</td>
                         <td>0</td>
                         <td>Hiển thị</td>
-                        <td></td>
-                        <td>Có</td>
                         <td>2</td>
-                        <td>1000</td>
                         <td>27-09-2023</td>
                         <td style="width: 100px;" align="center"><a class="fa-solid fa-magnifying-glass" href="#"></a>&ensp; <a class="fa-solid fa-pen-to-square" href="suasanpham.php"></a>&ensp;<a class="fa-solid fa-trash" href="#"></a></td>
                     </tr>
