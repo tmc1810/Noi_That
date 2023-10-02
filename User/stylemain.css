@@ -4,9 +4,10 @@ body{
 
 /* CSS cho đầu đề */
 header {
-    position:static;
-    margin-top: -1px;
-    margin-left: -1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     background: rgb(39, 38, 38);
     padding: 10px;
@@ -38,11 +39,21 @@ header {
     margin-right: 100px;
 }
 
+.body-web{
+    margin: 0;
+    padding: 0;
+    padding-top: auto;
+    padding-bottom: auto;
+}
 
-footer{
-    position:absolute;
+#footer{
     background: rgb(39, 38, 38);
-    margin-top: 478px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width:100%;
 }
 
