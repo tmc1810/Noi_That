@@ -13,7 +13,10 @@ CREATE TABLE `user` (
 CREATE TABLE `danh_muc` (
   `id` integer PRIMARY KEY AUTO_INCREMENT,
   `anh_danh_muc` varchar(3000),
-  `ten_danh_muc` varchar(100)
+  `ten_danh_muc` varchar(100),
+  `thu_tu` integer,
+  `hien_thi_trang_chu` varchar(10),
+  `hien_thi` varchar(10)
 );
 
 CREATE TABLE `san_pham` (
@@ -22,26 +25,22 @@ CREATE TABLE `san_pham` (
   `ma_hang_san_xuat` integer,
   `ten_san_pham` text,
   `gia_ban` integer,
-  `gia_ban_sale` integer,
   `anh_thumbnail` text,
   `mo_ta_san_pham` text,
   `mo_ta_san_pham_chi_tiet` text,
   `ngay_them_san_pham` datetime,
-  `ngay_cap_nhat_san_pham` datetime
+  `ngay_cap_nhat_san_pham` datetime,
+  `so_luong` integer,
+  `da_ban` integer,
+  `luot_xem` integer,
+  `hien_thi` varchar(10),
+  `tinh_trang` varchar(30)
 );
 
 CREATE TABLE `san_pham_desc` (
   `id` integer PRIMARY KEY AUTO_INCREMENT,
   `ma_san_pham` integer,
   `anh_thumbnail_bo_sung` text
-);
-
-CREATE TABLE `phan_hoi` (
-  `id` integer PRIMARY KEY AUTO_INCREMENT,
-  `ho_ten` varchar(50),
-  `email` varchar(100),
-  `so_dien_thoai` varchar(20),
-  `noi_dung_phan_hoi` text
 );
 
 CREATE TABLE `don_hang` (
@@ -70,49 +69,6 @@ CREATE TABLE `hang_san_xuat` (
   `so_dien_thoai` varchar(20),
   `dia_chi` varchar(200),
   `anh_dai_dien` text
-);
-
-CREATE TABLE `menu` (
-  `id` int PRIMARY KEY AUTO_INCREMENT,
-  `thuoc_nhom` varchar(50),
-  `tieu_de_menu` varchar(100),
-  `menu_cha` varchar(50),
-  `loai_menu` varchar(50),
-  `trang_dich` varchar(50),
-  `trang_thai` varchar(50),
-  `mo_menu` varchar(50),
-  `mo_ta_chi_tiet` text
-);
-
-CREATE TABLE `nhom_menu` (
-  `id` int PRIMARY KEY AUTO_INCREMENT,
-  `ten_nhom` varchar(100),
-  `mo_ta_nhom` text
-);
-
-CREATE TABLE `thong_tin_co_ban_website` (
-  `id` int PRIMARY KEY AUTO_INCREMENT,
-  `tieu_de_trang` varchar(100),
-  `logo_cua_trang` text,
-  `trang_thai` varchar(50),
-  `email_nguoi_quan_tri` varchar(100),
-  `so_dien_thoai` varchar(20),
-  `dia_chi` text
-);
-
-CREATE TABLE `noi_dung_tinh_website` (
-  `id` int PRIMARY KEY AUTO_INCREMENT,
-  `fanpage` text,
-  `theo_doi_chung_toi` text,
-  `thong_tin_lien_he` text
-);
-
-CREATE TABLE `gioi_thieu_website` (
-  `id` int PRIMARY KEY AUTO_INCREMENT,
-  `tieu_de` varchar(100),
-  `gioi_thieu_ngan` varchar(200),
-  `anh_dai_dien` text,
-  `gioi_thieu` text
 );
 
 ALTER TABLE `san_pham` ADD FOREIGN KEY (`ma_hang_san_xuat`) REFERENCES `hang_san_xuat` (`id`);
