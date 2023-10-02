@@ -1,5 +1,6 @@
 <head>
     <title>Quản lý đơn hàng</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
 </head>
 
 <body>
@@ -13,7 +14,6 @@
                     <div class="hstack gap-2 ">
                         <div class="p-2"><h5>Quản lý đơn hàng<h5></div>
                         <div class="p-2 ms-auto"><button class="btn btn-danger">Xóa</button></div>
-                        
                     </div>
                 </div>
                 <div class="accordion-body">

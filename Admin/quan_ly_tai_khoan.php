@@ -1,5 +1,6 @@
 <head>
     <title>Quản lý tài khoản</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
 </head>
 
 <body>
@@ -12,8 +13,7 @@
                 <div class="container-fluid bg-secondary">
                     <div class="hstack gap-2 ">
                         <div class="p-2"><h5>Quản lý tài khoản<h5></div>
-                        <div class="p-2 ms-auto"><a href="themtaikhoan.php" class="btn btn-primary">Thêm</a></div>
-                        
+                        <div class="p-2 ms-auto"><a href="themtaikhoan.php" class="btn btn-primary">Thêm</a></div> 
                     </div>
                 </div>
                 <div class="accordion-body">

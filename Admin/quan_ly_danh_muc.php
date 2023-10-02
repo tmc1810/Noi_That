@@ -1,5 +1,6 @@
 <head>
     <title>Quản lý danh mục</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
 </head>
 
 <body>
@@ -14,7 +15,6 @@
                         <div class="p-2"><h5>Quản lý danh mục<h5></div>
                         <div class="p-2 ms-auto"><a href="themdanhmuc.php" class="btn btn-primary">Thêm</a></div>
                         <div class="p-2"><a href="xoadanhmuc.php" class="btn btn-danger" >Xóa</a></div>
-                        
                     </div>
                 </div>
                 <div class="accordion-body">

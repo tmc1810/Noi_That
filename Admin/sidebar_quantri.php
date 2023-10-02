@@ -26,7 +26,6 @@
       </div>
     </header>
     <hr>
-    <div class="menu-bar">
       <div class="menu">
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-link"><a href="bang_dieu_khien.php"><i class="fa-solid fa-gauge"></i>Bảng điều khiển</a></li>
@@ -39,7 +38,6 @@
           <li class="nav-link"><a href="../User/Sign-in-up.html"><i class="fa-solid fa-right-from-bracket"></i>Đăng xuất</a></li>
         </ul>
       </div>
-    </div>
   </nav>
   <script src="./bootstrap5/js/bootstrap.min.js"></script>
 </body>

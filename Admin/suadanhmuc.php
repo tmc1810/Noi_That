@@ -1,5 +1,6 @@
 <head>
     <title>Quản lý danh mục</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
 </head>
 
 <body>
