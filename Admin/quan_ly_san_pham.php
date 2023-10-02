@@ -48,7 +48,7 @@
                 <table class="table table-bordered table-hover vertical-center">
                 <thead>
                 <tr>
-                    <th class="checkbox-column" id="product-grid_c0"><input type="checkbox" value="1" name="product-grid_c0_all" id="product-grid_c0_all" /></th>
+                    <th class="checkbox-column" id="product-grid_c0"><input type="checkbox" id="select-all"></th>
                     <th id="product-grid_cavatar">&nbsp;</th>
                     <th id="product-grid_c1">Mã sản phẩm</th>
                     <th id="product-grid_c2">Tên sản phẩm</th>
@@ -64,7 +64,7 @@
                 </thead>
                 <tbody>
                     <tr class="odd">
-                        <td width="5"><input value="202886" id="product-grid_c0_0" type="checkbox" name="product-grid_c0[]" /></td>
+                        <td width="5"><input type="checkbox"  class="checkbox-item"></td>
                         <td><img src="https://hello.nanoweb.vn/mediacenter/media/images/945/products/945/30/s50_50/8-1570679331.jpg"/></td>
                         <td></td>
                         <td>DHI-ASL6101K</td>
@@ -83,5 +83,6 @@
             </div>
         </div>
     </div>
+    <script src="./FrontEnd/style.js"></script>
 </body>
 </html>

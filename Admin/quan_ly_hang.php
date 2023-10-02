@@ -34,7 +34,7 @@
                         <thead>
                         <tr>
                             <th id="manufacturer-grid_cnumber">&nbsp;</th>
-                            <th class="checkbox-column" id="manufacturer-grid_c0"><input type="checkbox" value="1" name="manufacturer-grid_c0_all" id="manufacturer-grid_c0_all" /></th>
+                            <th class="checkbox-column" id="product-grid_c0"><input type="checkbox" id="select-all"></th>
                             <th id="manufacturer-grid_cavatar">&nbsp;</th><th id="manufacturer-grid_c1">Tên hãng</th>
                             <th id="manufacturer-grid_corder">Thứ tự</th>
                             <th></th>
@@ -43,7 +43,7 @@
                         <tbody>
                         <tr class="odd">
                         <td width="30px">1</td>
-                        <td width="30px"><input value="7388" id="manufacturer-grid_c0_0" type="checkbox" name="manufacturer-grid_c0[]" /></td>
+                        <td width="30px"><input type="checkbox" class="checkbox-item"></td>
                         <td width="60px;"></td><td>Việt nam</td><td width="80px" style="text-align:center;">0</td>
                         <td style="width: 100px;" align="center"><a class="fa-solid fa-pen-to-square" href="suahang.php"></a>&emsp;<a class="fa-solid fa-trash" href="#"></a></td>
                         </tr>
@@ -54,5 +54,6 @@
             </div>
         </div>
     </div>
+    <script src="./FrontEnd/style.js"></script>
 </body>
 </html>

@@ -30,7 +30,7 @@
                         <thead>
                         <tr>
                             <th id="news-categories-grid_cnumber">&nbsp;</th>
-                            <th class="checkbox-column" id="news-categories-grid_c0"><input type="checkbox" value="1" name="news-categories-grid_c0_all" id="news-categories-grid_c0_all" /></th>
+                            <th class="checkbox-column" id="product-grid_c0"><input type="checkbox" id="select-all"></th>
                             <th id="news-categories-grid_ccat_name">Tên danh mục</th>
                             <th id="news-categories-grid_cshowinhome">Hiển thị ở trang chủ</th>
                             <th id="news-categories-grid_cstatus" >Trạng thái</th>
@@ -42,7 +42,7 @@
                         <tbody>
                             <tr class="odd">
                             <td style="width: 50px; text-align: center;">1</td>
-                            <td width="5"><input value="53254" id="news-categories-grid_c0_0" type="checkbox" name="news-categories-grid_c0[]" /></td>
+                            <td width="5"><input type="checkbox" class="checkbox-item"></td>
                             <td>QUẠT TRẦN MỸ</td>
                             <td style="width: 100px; text-align: center;">Có</td>
                             <td style="width: 100px;text-align: center;">Hiển thị</td>
@@ -55,5 +55,6 @@
             </div>
         </div>
     </div>
+    <script src="./FrontEnd/style.js"></script>
 </body>
 </html>

@@ -37,7 +37,7 @@
                             <table class="table table-bordered table-hover vertical-center">
                                 <thead>
                                 <tr>
-                                    <th class="checkbox-column" id="orders-grid_c0"><input type="checkbox" value="1" name="orders-grid_c0_all" id="orders-grid_c0_all" /></th>
+                                    <th class="checkbox-column" id="product-grid_c0"><input type="checkbox" id="select-all"></th>
                                     <th id="orders-grid_corder_id">#</th><th id="orders-grid_ccustomer">Khách hàng</th>
                                     <th id="orders-grid_cuser_id">&nbsp;</th><th id="orders-grid_ccreated_time">Thời gian tạo</th>
                                     <th id="orders-grid_corder_status">Trạng thái đơn hàng</th><th id="orders-grid_ctransport_status">Trạng thái vận chuyển</th>
@@ -46,7 +46,7 @@
                                 </thead>
                                 <tbody>
                                     <tr class="odd">
-                                        <td width="5"><input value="20689" id="orders-grid_c0_0" type="checkbox" name="orders-grid_c0[]" /></td>
+                                        <td width="5"><input type="checkbox" class="checkbox-item"></td>
                                         <td>#20689</td><td>ádjapdsoj</td><td>Khách vãng lai</td><td>30-09-2023, 12:52:25</td><td>Chờ xử lý</td>
                                         <td>Chưa giao hàng</td><td><span class = "pricetext">9.490.000</span><span class = "currencytext">đ</span></td>
                                         <td style="width: 100px;" align="center"><a class="fa-solid fa-pen-to-square" href="#"></a></td>
@@ -59,5 +59,6 @@
             </div>
         </div>
     </div>
+    <script src="./FrontEnd/style.js"></script>
 </body>
 </html>

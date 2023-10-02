@@ -19,7 +19,7 @@
             <div class="accordion-item">
                 <div class="container-fluid bg-secondary">
                     <div class="hstack gap-2 ">
-                        <div class="p-2"><h5>Sửa hãng<h5></div> 
+                        <div class="p-2"><h5>Thêm hãng<h5></div> 
                     </div>
                 </div>
                 <div class="accordion-body">
