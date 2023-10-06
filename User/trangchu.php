@@ -1,3 +1,6 @@
+<?php
+    include_once 'connect.php'; // nạp file kết nối database để truy suất dữ liệu
+?>
 <!DOCTYPE html>
 <html lang="vn">
 <head>
@@ -6,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="./bootstrap5/css/bootstrap.min.css">
     <link rel="shortcut icon" type="image/png" href="img/logo.png" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cssweb.css">
     <title>TMC INTERIOR</title>
 </head>
 <body>
@@ -47,7 +50,7 @@
                         <div>
                             <h3>
                                 <span>01</span>
-                                <span class="hello">Giới thiệu</span>
+                                <span class="hello">GIỚI THIỆU</span>
                                 <hr>
                             </h3>
                             <h6>
@@ -93,55 +96,54 @@
                         </div>
                     </div>
                 </div>
-                   <img src="./img/background2.jpg" width="100%" height="1000px"></li>
+                   <img src="./img/background2.jpg" width="100%" height="1000px">
+            </li>
             <li>
-                <div class="view"></div>
-                <img src="./img/background3.png" width="100%" height="1000px"></li>
+                <div class="main-view">
+                    <div class="view-title">
+                        <div>
+                            <h3>
+                                <span class="hello">SẢN PHẨM</span>
+                                <span style="margin-left:50px;">02</span>
+                                <hr>
+                            </h3>
+                            <h6>
+                                <hr>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:300px; margin-left:300px;">
+                        <?php 
+                            $sql = "SELECT * FROM danh_muc";
+                            $result = $conn->query($sql);// đây là phần thực hiện truy vấn
+                            if ($result->num_rows > 0) { // nếu dữ liệu có thì ta sử dụng while để duyệt qua từng hàng (có thể sử dụng foreach)
+                                while ($row = $result->fetch_assoc()) 
+                            { // Sử dụng biến $row 
+                        ?>
+                            <div class="item col" >
+                                <div>
+                                    <a href='sanpham.php?ID_DM=<?=$row["id"]?>'> <img style="width:360px"; src="<?=$row["img_danh_mục"]?>" alt="anh <?=$row["ten_danh_muc"]?>"></a>
+                                </div>
+                                <div class="item_content">
+                                    <h3><?=$row["ten_danh_muc"]?></h3>
+                                </div>
+                            </div>
+                        <?php
+                            }
+                            } else {
+                                echo "Không có dữ liệu.";
+                            }
+                        ?>
+                    </div>
+                </div>
+                <img src="./img/background3.png" width="100%" height="1000px">
+            </li>
         </ul>
         
     </div>
-    <footer>
-            <div class="container-fluid">
-                <div class="list">
-                    <ul class="nav justify-content-lg-center">
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><h5>SẢN PHẨM</h5></li>
-                            <li class="nav-item"><a href="#">Khóa thông minh</a></li>
-                            <li class="nav-item"><a href="#">Bàn làm việc</a></li>
-                            <li class="nav-item"><a href="#">Giường ngủ</a></li>
-                            <li class="nav-item"><a href="#">Tủ quần áo</a></li>
-                            <li class="nav-item"><a href="#">Sofa</a></li>
-                        </ul>
-
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><h5>TRỢ GIÚP</h5></li>
-                            <li class="nav-item"><a href="#">Hướng dẫn mua hàng</a></li>
-                            <li class="nav-item"><a href="#">Hướng dẫn thanh toán</a></li>
-                            <li class="nav-item"><a href="#">Hướng dẫn đổi trả</a></li>
-                            <li class="nav-item"><a href="#">Chính sách giao hàng</a></li>
-                        </ul>
-
-                        <ul class="nav flex-column">
-                            <li><h5>VỀ CHÚNG TÔI</h5></li>
-                            <li><a href="#">Giới thiệu</a></li>
-                            <li><a href="#">Tin tức</a></li>
-                        </ul>
-
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><h5>FANPAGE</h5></li>
-                            <li class="nav-item"><img src="./img/fanpage.png" width="100%"></li>
-                        </ul>
-
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><h5>THEO DÕI CHÚNG TÔI</h5></li>
-                            <li class="nav-item"><img src="./img/follow.png" width="100%"></li>
-                        </ul>
-                    </ul>
-                </div><br>
-                <hr>
-                <center><h6 style="color: #FFF;">@Copy right 2023, Designed by Lanweb</h6></center>
-            </div>
-    </footer>
+<?php
+include './footerweb.php'
+?>
     <script src="style.js"></script>
 </body>
 </html>

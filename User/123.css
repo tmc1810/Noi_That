@@ -98,13 +98,14 @@ body{
     color:#EDCD8E;
     margin-left: 30px;
 }
+
 .main-gioithieu .main-title h6{
     position:relative;
     margin-right: 750px;
     margin-top: -80px;
     color:#FFF;
     letter-spacing: 5px;
-    transform: rotate(-90deg) translate(-106px, -98px);
+    transform: rotate(180deg) translate(-106px, -98px);
 }
 
 .main-gioithieu .main-title h6 hr{
@@ -156,6 +157,45 @@ body{
 .main-gioithieu .main-title .img-title{
     margin-left: 770px;
     margin-top: -630px;
+}
+
+.main-view {
+    position:absolute;
+    margin-top: 20px;
+}
+
+.main-view .view-title{
+    position:absolute;
+    margin-left: 400px;
+    margin-top: 200px;
+    width: 1000px;
+    height: 600px;
+}
+
+.main-view .view-title h3{
+    color:#FFF;
+}
+
+.main-view .view-title h3 hr{
+    width: 250px;
+}
+
+.main-view .view-title h3 .hello{
+    color:#EDCD8E;
+    margin-left: 30px;
+}
+
+.main-view .view-title h6{
+    position:relative;
+    margin-right: 750px;
+    margin-top: -80px;
+    color:#FFF;
+    letter-spacing: 5px;
+    transform: rotate(-90deg) translate(-106px, -98px);
+}
+
+.main-view .view-title h6 hr{
+    width: 250px;
 }
 
 footer{

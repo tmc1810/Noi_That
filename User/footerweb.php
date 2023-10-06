@@ -1,8 +1,5 @@
-<?php
-        include './mainweb.php'
-?>
 <footer>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding:15px;">
         <div class="list">
             <ul class="nav justify-content-lg-center">
                 <ul class="nav flex-column">
@@ -39,7 +36,7 @@
                 </ul>
             </ul>
         </div><br>
-        <hr>
-        <center><h6 style="color: #FFF;">@Copy right 2023, Designed by Lanweb</h6></center>
+        <hr style="color: #E8B85B;">
+        <center><h6 style="color: #FFF; margin-top:30px;">@Copy right 2023, Designed by Lanweb</h6></center>
     </div>
 </footer>

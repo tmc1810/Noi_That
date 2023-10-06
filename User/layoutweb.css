@@ -35,7 +35,6 @@ header {
 }
 
 .nav{
-    
     margin-right: 100px;
 }
 
@@ -43,8 +42,11 @@ header {
     position:relative;
     margin: 0;
     padding: 0;
-    padding-top: auto;
-    padding-bottom: auto;
+}
+
+.gioithieu{
+    width:100%;
+    background-color:aquamarine;
 }
 
 footer{

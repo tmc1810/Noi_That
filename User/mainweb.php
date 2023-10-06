@@ -6,6 +6,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="./bootstrap5/css/bootstrap.min.css">
     <link rel="shortcut icon" type="image/png" href="img/logo.png" />
-    <link rel="stylesheet" href="styleweb.css">
+    <link rel="stylesheet" href="layoutweb.css">
     <title>TMC INTERIOR</title>
 </head>

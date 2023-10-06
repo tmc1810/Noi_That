@@ -20,16 +20,16 @@
                 <div class="accordion-body">
                     <table class="table table-bordered table-hover vertical-center">
                         <thead>
-                        <tr>
-                            <th id="news-categories-grid_cnumber">&nbsp;</th>
-                            <th class="checkbox-column" id="product-grid_c0"><input type="checkbox" id="select-all"></th>
-                            <th id="news-categories-grid_ccat_name">Tên danh mục</th>
-                            <th id="news-categories-grid_cshowinhome">Hiển thị ở trang chủ</th>
-                            <th id="news-categories-grid_cstatus" >Trạng thái</th>
-                            <th id="news-categories-grid_ccat_order" >Thứ tự</th>
-                            <th></th>
-                            
-                        </tr>
+                            <tr>
+                                <th id="news-categories-grid_cnumber">&nbsp;</th>
+                                <th class="checkbox-column" id="product-grid_c0"><input type="checkbox" id="select-all"></th>
+                                <th id="news-categories-grid_ccat_name">Tên danh mục</th>
+                                <th id="news-categories-grid_cshowinhome">Hiển thị ở trang chủ</th>
+                                <th id="news-categories-grid_cstatus" >Trạng thái</th>
+                                <th id="news-categories-grid_ccat_order" >Thứ tự</th>
+                                <th></th>
+                                
+                            </tr>
                         </thead>
                         <tbody>
                             <tr class="odd">
