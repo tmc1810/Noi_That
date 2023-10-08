@@ -112,15 +112,18 @@
                             </h6>
                         </div>
                     </div>
-                    <div class="row" style="margin-top:300px; margin-left:300px;">
+                    <div class="row" style="margin-top:300px; margin-left: 600px;">
                         <?php 
                             $sql = "SELECT * FROM danh_muc";
                             $result = $conn->query($sql);// đây là phần thực hiện truy vấn
                             if ($result->num_rows > 0) { // nếu dữ liệu có thì ta sử dụng while để duyệt qua từng hàng (có thể sử dụng foreach)
-                                while ($row = $result->fetch_assoc()) 
-                            { // Sử dụng biến $row 
+                                $count = 0; // Đếm sản phẩm đã hiển thị
+                                while ($row = $result->fetch_assoc()) { 
+                                    if ($count % 3 == 0 && $count != 0) { // Đóng hàng sau khi hiển thị 3 sản phẩm
+                                        echo '</div><div class="row" style="margin-left: 600px;" >';
+                                    }
                         ?>
-                            <div class="item col" >
+                            <div class="item col-4" >
                                 <div>
                                     <a href='sanpham.php?ID_DM=<?=$row["id"]?>'> <img style="width:360px"; src="<?=$row["img_danh_mục"]?>" alt="anh <?=$row["ten_danh_muc"]?>"></a>
                                 </div>
@@ -129,7 +132,8 @@
                                 </div>
                             </div>
                         <?php
-                            }
+                            $count++;
+                        }
                             } else {
                                 echo "Không có dữ liệu.";
                             }

@@ -238,36 +238,3 @@ body{
     color: white;
     margin-right: 10px;
 }
-
-footer{
-    position:absolute;
-    background: rgb(39, 38, 38);
-    margin-top: 3000px;
-    width:100%;
-}
-
-footer .list{
-    margin-left: 300px;
-}
-
-footer hr{
-    background: rgb(232, 184, 91);
-    height: 2px;
-    border-top: var(--bs-border-width) solid;
-    opacity: 5;
-}
-
-footer ul li {
-    font-size: 15px;
-    margin-top: 10px;
-}
-
-footer ul li h5{
-    margin-top: 30px;
-    color:#FFF;
-}
-
-footer ul li a{
-    color:rgb(154, 154, 154);
-    text-decoration: none;
-}

@@ -5,7 +5,10 @@
 
 <body>
     <?php
-        include './sidebar_quantri.php'
+        include './sidebar_quantri.php';
+        include './connect.php';
+        $sql = "SELECT*FROM san_pham";
+        $products=mysqli_query($connect, $sql);
     ?>
     <div class="content">
         <div class="accordion" id="accordionExample">
@@ -39,39 +42,51 @@
                 </form>
                 <br>
                 <table class="table table-bordered table-hover vertical-center">
-                <thead>
-                <tr>
-                    <th class="checkbox-column" id="product-grid_c0"><input type="checkbox" id="select-all"></th>
-                    <th id="product-grid_cavatar">&nbsp;</th>
-                    <th id="product-grid_c1">Mã sản phẩm</th>
-                    <th id="product-grid_c2">Tên sản phẩm</th>
-                    <th id="product-grid_cprice">Giá sản phẩm</th>
-                    <th id="product-grid_cproduct_category_id">Danh mục</th>
-                    <th id="product-grid_c3">Đã bán</th>
-                    <th id="product-grid_c4">Số lượng</th>
-                    <th id="product-grid_cstatus">Trạng thái</th>
-                    <th id="product-grid_c5">Lượt xem</th>
-                    <th id="product-grid_ccreated_time">Ngày đăng</th>
-                    <th class="button-column" id="product-grid_c7">&nbsp;</th>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr class="odd">
-                        <td width="5"><input type="checkbox"  class="checkbox-item"></td>
-                        <td><img src="https://hello.nanoweb.vn/mediacenter/media/images/945/products/945/30/s50_50/8-1570679331.jpg"/></td>
-                        <td></td>
-                        <td>DHI-ASL6101K</td>
-                        <td>9.490.000</td>
-                        <td>KHÓA THÔNG MINH</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>Hiển thị</td>
-                        <td>2</td>
-                        <td>27-09-2023</td>
-                        <td style="width: 100px;" align="center"><a class="fa-solid fa-magnifying-glass" href="#"></a>&ensp; <a class="fa-solid fa-pen-to-square" href="suasanpham.php"></a>&ensp;<a class="fa-solid fa-trash" href="#"></a></td>
-                    </tr>
-                </tbody>
-                </table>
+                        <thead>
+                            <tr>
+                                <th class="checkbox-column"><input type="checkbox" value="1" /></th>
+                                <th>&nbsp;</th>
+                                <th>Mã sản phẩm</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Giá sản phẩm</th>
+                                <th>Danh mục</th>
+                                <th>Đã bán</th>
+                                <th>Số lượng</th>
+                                <th>Trạng thái</th>
+                                <th>Lượt xem</th>
+                                <th>Ngày đăng</th>
+                                <th class="button-column">&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <?php foreach($products as $product){ ?>
+                                <tr>
+                                    <td width="5"><input value="202886" id="product-grid_c0_0" type="checkbox"/></td>
+                                    <td><img src="<?php echo($product['anh_thumbnail']) ?>" height="100px" /></td>
+                                    <td><?php echo($product['id']) ?></td>
+                                    <td><?php echo($product['ten_san_pham']) ?></td>
+                                    <td><?php echo($product['gia_ban']) ?></td>
+                                    <td>KHÓA THÔNG MINH</td>
+                                    <td><?php echo($product['da_ban']) ?></td>
+                                    <td><?php echo($product['so_luong']) ?></td>
+                                    <td><?php
+                                        if($product['hien_thi']=="co"){
+                                            echo("Hiển thị");
+                                        }
+                                        else{
+                                            echo("Ẩn");
+                                        }
+                                    ?></td>
+                                    <td><?php echo($product['luot_xem']) ?></td>
+                                    <td><?php echo($product['ngay_cap_nhat_san_pham']) ?></td>
+                                    <td style="width: 100px;" align="center"><a class="fa-solid fa-magnifying-glass" href="#"></a>&ensp; 
+                                    <a class="fa-solid fa-pen-to-square" href="suasanpham.php"></a>&ensp;<a class="fa-solid fa-trash" href="xoasanpham.php?id=<?php echo($product['id']) ?>"></a>
+                                    </td>
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
